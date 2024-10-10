@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery Website</title>
+    <link rel="stylesheet" href="bakery.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>John Tasty Treats</h1> <!-- Title of the bakery -->
+    </header>
+
+    <!-- Home Page -->
+    <div class="container" id="homePage">
+        <h2>Welcome to Our Bakery</h2>
+        <p>We specialize in custom cakes! Choose from our recommended flavors and designs below:</p>
+
+        <div class="cake">
+            <img src="ube-cake.jpg" alt="Chocolate Delight Cake" class="cake-image">
+            <h3>Chocolate Delight</h3>
+            <p>Rich and moist chocolate cake with creamy frosting, perfect for chocolate lovers.</p>
+            <a href="orderpage.html" class="button">Order Now</a>
+        </div>
+
+        <div class="cake">
+            <img src="vanilla-cake.jpg" alt="Vanilla Dream Cake" class="cake-image">
+            <h3>Vanilla Dream</h3>
+            <p>A light and fluffy vanilla cake with layers of buttercream frosting.</p>
+            <a href="orderpage.html" class="button">Order Now</a>
+        </div>
+
+        <div class="cake">
+            <img src="carot-cake.jpg" alt="Red Velvet Cake" class="cake-image">
+            <h3>Strawberry Bliss</h3>
+            <p>Fresh strawberries and cream layered with soft vanilla sponge.</p>
+            <a href="orderpage.html" class="button">Order Now</a>
+        </div>
+    </div>
+
+    <!-- Order Information Form -->
+    <div class="container" id="orderPage">
+        <h2>Order Information</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact:</label>
+                <input type="text" id="contact" placeholder="Enter your contact info" required>
+            </div>
+            <div class="form-group">
+                <label for="order">Order Details:</label>
+                <textarea id="order" placeholder="Describe your order" required></textarea>
+            </div>
+            <div class="action-buttons">
+                <a href="#homePage" class="button">Cancel</a>
+                <a href="#alertSection" class="button">Submit</a>
+            </div>
+        </form>
+    </div>
+
+    <!-- Alert Section -->
+    <div class="container alert-section" id="alertSection">
+        <p>Successfully submitted!</p>
+        <a href="#homePage" class="button">Back to Home</a>
+    </div>
+
+    <!-- Footer with Contact Information -->
+    <footer>
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>Owner: Jane Doe</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: janedoe@bakery.com</p>
+            <p>Address: 123 Sweet Lane, Caketown, CT 54321</p>
+        </div>
+    </footer>
+
+</body>
+</html>
